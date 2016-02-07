@@ -1,0 +1,121 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+  <title>AweAir - Home Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Three Important Meta -->
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="src/css/user.css" type="text/css">
+  <!-- Google Material icon -->
+  <link rel="stylesheet" href="Material-Design-Iconic-Font/css/material-design-iconic-font.min.css" type="text/css">
+  <!-- Material Colour Palette-->
+  <link rel="stylesheet" href="src/js/material-design-color-palette.min.css">
+  <!-- Animated css -->
+  <link rel="stylesheet" href="src/js/animate.min.css">
+</head>
+
+<body>
+  <!--  User Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">
+        AweAir
+      </div>
+      <ul class="nav-right">
+        <!-- Mail with count 
+          *** ALERT USER ** count++ if the level detected is above > x -->
+        <li class="user-mail">
+          <a href="#" id="mail-trigger">
+            <i id="hover-mail" class="zmdi zmdi-email zmdi-hc-2x zmdi-hc-border-circle mdc-text-cyan animated infinite wobble" style="border-color: #00EDFD;"></i>
+          </a>
+        </li>
+        <!--  Logout  -->
+        <li class="signout">
+          <a id="signout-toggle" href="index.html">
+            Signout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="mail-menu">
+    <div class="mail-menuHeader">
+      Notifications
+    </div>
+    <!--  to add dynamic messages here  -->
+    <div class="mail-menuMessage">
+      <div class="menu-header">
+        AweAir
+      </div>
+      <div class="menu-message">
+        Exhaust fan is now on!
+      </div>
+      <div class="menu-header">
+        WARNING
+      </div>
+      <div class="menu-message">
+        The carbon monoxide level is too high!
+      </div>
+    </div>
+  </div>
+  <section id="content">
+    <div class="container">
+      <div class="user-content">
+        <!-- User Profile -->
+        <div class="user-imgContainer">
+          <div class="username">
+            Welcome Back, Mark!
+          </div>
+          <a class="user-image" href='#'>
+            <!-- Round user profile -->
+            <img class="user-avatar" src="img/markzucker.jpg">
+            <!-- Username -->
+          </a>
+        </div>
+      </div>
+      <!-- Progress Bar 
+            can be exp, money save, goal -->
+      <div class="progressbar-content">
+        <div class="progressbar-container">
+          <div id="usageHeading">
+            Montly Usage limit
+          </div>
+          <div id="circle"></div>
+          <div id="circle-water"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Suggestion -->
+    <div class="suggestion-box"></div>
+  </section>
+  <!-- Visual Content -->
+  <div class="user-admin">
+    <!-- Real-time Tracking -->
+    <!--  wih dropdown selection -->
+    <div class="realtime-chart">
+      <!-- Temperature >
+     *** Humidity 
+     *** Methane Concentration 
+     *** Cabon Monoxide Concetration  -->
+      <div id="realtime-chart" style="min-width: 200px; height: 250px; margin: 0 auto"></div>
+    </div>
+    <!-- Resource Usage this month -->
+    <div class="pie-chart">
+      <div id="pie-chart" style="min-width: 200px; height: 250px; margin: 0 auto"></div>
+    </div>
+  </div>
+
+  <!--  jQuery -->
+  <script src="src/js/jquery-2.1.4.min.js"></script>
+  <!-- Progress bar library -->
+  <script src="src/js/circle-progress.js"></script>
+  <!-- HighChart Library -->
+  <script src="Highcharts-4.1.9/js/highcharts.js"></script>
+  <!--  Script Here -->
+  <script src="src/js/admin.js"></script>
+</body>
+
+</html>

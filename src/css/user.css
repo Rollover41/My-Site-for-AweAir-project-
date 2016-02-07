@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #edecec;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+.nav {
+  background-color: rgb(37, 37, 48);
+  color: rgba (255, 255, 255);
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.nav-container {
+  margin: 0 10%;
+  height: 60px;
+}
+
+.logo {
+  color: white;
+  float: left;
+  font-size: -webkit-xxx-large;
+  width: 155px;
+  padding-top: 4px;
+}
+
+.nav-right {
+  float: right;
+  margin-top: 13px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: list-item;
+}
+
+.user-mail {
+  float: left;
+  padding-right: 15px;
+  display: inline-block;
+}
+#hover-mail:hover {
+  background-color: #00EDFD;
+  color: #fff;
+}
+.signout {
+  float: right;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+#signout-toggle {
+  background: transparent;
+  color: #00EDFD;
+  border-radius: 40px;
+  border: 2px solid #00EDFD;
+  padding: 9px 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#signout-toggle:hover {
+  background-color: #00EDFD;
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-profile {
+  background-color: inherit;
+  color: inherit;
+}
+
+body #content {
+  padding-top: 90px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.user-content {
+  width: 18%;
+  float: left;
+  padding-left: 20%
+}
+
+.user-imgContainer {
+  /*  background: #F5F5F5;*/
+  padding: 20px;
+  background-color: rgb(37, 37, 48);
+  border-radius: 10px;
+}
+
+.user-avatar {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  width: 90%;
+  height: 100%;
+  border: 5px solid white;
+}
+
+.username {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+}
+
+.progressbar-content {
+  width: 35%;
+  margin: auto;
+  padding-left: 20%;
+}
+
+.progressbar-container {
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(37, 37, 48);
+  padding: 15px;
+}
+
+#circle {
+  float: left;
+  width: auto;
+  padding: 20px;
+  padding-left: 45px;
+}
+
+#circle-water {
+  float: left;
+  width: auto;
+  padding: 40px;
+  padding-left: 80px;
+}
+
+#usageHeading {
+  font-size: 19px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.realtime-chart {
+  padding: 5% 15%;
+}
+
+.pie-chart {
+  width: 18%;
+  float: left;
+  padding-left: 20%;
+}
+
+.mail-menu {
+  color: white;
+  /* Size and position */
+  width: 300px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  margin-right: 160px;
+  margin-top: 60px;
+  display: none;
+  /* Styles */
+  border-radius: 0.4em;
+  border: 1px solid transparent;
+}
+
+.mail-menuHeader {
+/*  background-color: rgb(37, 37, 48);*/
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #F0F0F0;
+  color: #4C4C4C;
+      background-color: #fff;
+}
+
+.mail-menuMessage {
+  color: black;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.menu-header {
+  font-weight: 600; 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 15px;  
+}
+.menu-menuMessage {
+    font-size: 12px;
+    color: #A9A9A9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+}

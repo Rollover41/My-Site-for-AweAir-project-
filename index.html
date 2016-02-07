@@ -1,0 +1,68 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+  <title>AweAir - Home Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="src/css/main.css" type="text/css">
+</head>
+
+<body>
+  <video autoplay loop poster="img/poster.jpg" id="bgvid">
+    <source src="vid/paris.mp4" type="video/mp4">
+  </video>
+  <div class="navigation">
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-img" src="img/aweair.png">
+      </a>
+    </div>
+    <div class="nav-login">
+      <a href="#" id="login-trigger">
+        <span>Login</span>
+      </a>
+    </div>
+  </div>
+  <div class="login-content">
+    <form class="form-3">
+      <p class="clearfix">
+        <label for="login">Username</label>
+        <input type="text" name="login" id="login" placeholder="Username">
+      </p>
+      <p class="clearfix">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </p>
+      <p class="clearfix">
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember">Remember me</label>
+      </p>
+      <p class="clearfix">
+        <input type="submit" name="submit" value="Sign in">
+      </p>
+    </form>
+  </div>
+  <div class="jumbotron">
+    <div class="jumbotron-middle">
+      <h2>Welcome Home</h2>
+      <div class="subtitle">
+        AweAir it's more powerful than you think
+      </div>
+      <div class="jumbotron-btn">
+        <a class="button" href="#">
+          Sign Up
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--  jQuery -->
+  <script src="src/js/jquery-2.1.4.min.js"></script>
+  <!--  Javascript -->
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
